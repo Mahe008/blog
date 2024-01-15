@@ -1,0 +1,498 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: rgba(0, 255, 255, 0.2);
+}
+#header  {
+    display: flex;
+    padding: 5px 20px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: lightseagreen;
+    z-index: 2;
+}
+#header h1 {
+    font-family:"Freehand";
+}
+#header h1::first-letter {
+    color: orange;
+}
+#header h1 span:nth-child(2) {
+    color: orange;
+    font-family:"Freehand";
+}
+#header h1 span:nth-child(1) {
+    font-family:"Freehand";
+}
+#header div {
+    display: flex;
+    margin-left: auto;
+    margin-right: 10px;
+    align-items: center;
+}
+#header a {
+    text-decoration: none;
+}
+#header a button {
+    background-color: orange;
+    color: whitesmoke;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#header div a h3 {
+    padding: 5px 20px;
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+#header a button {
+    margin: 0 20px 0 10px;
+}
+#header .bi-search, .bi-x::before, .bi-list::before {
+    margin: 0 20px 0 10px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+}
+.bi-x::before, .bi-list::before {
+    color: #ffffff;
+    background-color: orange;
+}
+.custom-icon::before {
+    font-weight: 900 !important;
+}
+#header a h3:hover {
+    color: orange;
+    background-color: white;
+}
+#search {
+    padding: 10px;
+    background-color: whitesmoke;
+    position: fixed;
+    right: 150px;
+    top: 80px;
+    width: 35%;
+    border-radius: 5px;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: flex;
+}
+#search input {
+    font-size: 16px;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline: none;
+    font-weight: bold;
+}
+#search i {
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 100%;
+    border: none;
+    color: orange;
+    cursor: pointer;
+}
+#search .custom-icon::before {
+    font-weight: bolder !important;
+}
+#front {
+    background: url("../images/blog1\ 1417381-green-hills-wallpaper-1920x1080-for-android-50.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    margin: 68px 0 0;
+}
+#front div:nth-child(1) {
+    width: 400px;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+}
+#front div button {
+    padding: 10px 15px;
+    color: whitesmoke;
+    background-color: black;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#front div:nth-child(1) h1 {
+    padding: 5px;
+}
+#front div:nth-child(1) p {
+    padding: 5px;
+}
+#front div button:hover {
+    color: white;
+    background-color: orange;
+    transition: 0.3s;
+}
+#container1 {
+    display: flex;
+    width: 93%;
+    margin: 0px 7%;
+}
+#sub-container {
+    float: left;
+    width: 70%;
+}
+#right-side {
+    float: left;
+    width: 23%;
+}
+.blog {
+    padding: 15px;
+    border-radius: 3px;
+    background-color: white;
+    margin: 15px;
+}
+.blog img {
+    width: 100%;
+    border-radius: 5px;
+    height: 60vh;
+}
+.para p {
+    line-height: 20px;
+    word-spacing: 5px;
+    text-align: justify;
+    padding-top: 10px;
+}
+.blog>h2 {
+    font-weight: lighter;
+    padding-bottom: 5px;
+}
+.blog>p {
+    padding: 10px 0;
+    color: orange;
+}
+.blog hr {
+    margin: 15px 0;
+}
+.blog .icons {
+    display: flex;
+    justify-content: left;
+}
+.blog .icons div {
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+}
+.blog .icons div p {
+    padding: 0 5px;
+}
+.bi::before {
+    font-weight: bold !important;
+}
+.blog .icons p:hover {
+    color: orangered;
+}
+.about {
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 15px 15px 15px 0;
+    border: 1px solid gainsboro;
+}
+.catlog1 img {
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    align-items: center;
+    margin-top: 10px;
+}
+.catlog1>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+.about>h3 {
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    font-weight: lighter;
+
+}
+.catlog1>div h4 {
+    color: orange;
+    padding-top: 20px;
+}
+.catlog1>div p {
+    padding: 20px 30px;
+}
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+.social .bi {
+    display: flex;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    margin: 2px;
+    font-size: 18px;
+}
+.social .bi:hover {
+    background-color: orange;
+}
+.catlog2 div {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    text-align: left;
+    position: relative;
+    justify-content: center;
+    margin: 10px;
+}
+.catlog2 div li:hover {
+    color: orange;
+}
+.catlog2 div li:hover button {
+    background-color: orange;
+}
+.catlog2 ul li {
+    list-style: none;
+    padding: 5px;
+}
+.catlog2 ul li button {
+    position: absolute;
+    right: 15px;
+    background-color: gray;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    padding: 3px;
+}
+.catlog3 div {
+    padding: 5px 10px 10px;
+}
+.catlog3 div div h3 {
+    padding: 5px 0;
+    font-weight: 500;
+}
+.catlog3 div div h3:hover {
+    color: orange;
+}
+.catlog4 div {
+    padding: 10px;
+}
+.catlog4 div button {
+    padding: 5px 10px;
+    margin: 5px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+.catlog4 div button:hover {
+    background-color: black;
+    color:#ffffff;
+    border: 1px solid black;
+}
+br {
+    clear: left;
+}
+#contact {
+    background: url("../images/blog1\ 1417381-green-hills-wallpaper-1920x1080-for-android-50.jpg");
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    clear: both;
+}
+#contact>div {
+    background-color: #ffffff;
+    margin: 40px auto;
+    width: 55%;
+    height: fit-content;
+    padding: 10px 10px 10px 0;
+    border-radius: 10px;
+}
+#contact>div h1 {
+    text-align: center;
+    font-weight: lighter;
+}
+#contact form input,textarea {
+    padding: 8px;
+    margin: 15px 0 0 10px;
+    width: 47%;
+    background-color: gainsboro;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+#contact form textarea {
+    margin: 15px 10px 10px;
+    width: 96.6%;
+    line-height: 20px;
+    font-size: 15px;
+    padding: 8px;
+}
+#contact form button {
+    padding: 8px 25px;
+    margin: 0 0 5px 10px;
+    color: #ffffff;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+}
+footer {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+footer p {
+    margin-left: auto;
+    width: 65%;
+    text-align: right;
+}
+footer p span {
+    color: orange;
+}
+.view {
+    display: none;
+}
+
+@media screen and (max-width:799px) {
+    .view {
+        display: block;
+    }
+    footer {
+        padding: 30px 30px 30px 15px;
+    }
+    #contact form input,textarea {
+        width: 95% !important;
+    }
+    #container1 {
+        width: 100%;
+        margin: 0;
+    }
+    #right-side {
+        width: 35%;
+    }
+    #sub-conatiner {
+        width: 60%;
+    }
+    .catlog2 ul li button {
+        right: 5px;
+    }
+    #link {
+        position: fixed;
+        top: 68px;
+        left: 0;
+        background-color: #ffffff;
+        width: 100%;
+    }
+    #header .add-link {
+        display: flex;
+    }
+    #header .rem-link {
+        display: none;
+    }
+    #link a {
+        margin: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    #link a h3 {
+        border-radius: 0;
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+    #link a h3:hover {
+        background-color: black;
+    }
+    #search {
+        right: 0;
+        top: 68px;
+        width: 80%;
+    }
+    .bi-list::before, .bi-x::before {
+        display: block;
+    }
+}
+@media screen and (max-width:499px) {
+    #search {
+        width: 100%;
+    }
+    #link {
+    flex-direction: column;
+    padding: 10px 10px 0;
+    }
+    #header div a h3 {
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    #link a {
+        margin: 0;
+    }
+    #sub-container, #right-side {
+        float: none;
+        width: 100%;
+    }
+    #container1 {
+        display: block;
+    }
+    .about {
+        margin: 15px;
+    }
+    #contact>div {
+        width: 90%;
+    }
+    footer {
+        display: block;
+        padding: 15px 10px;
+    }
+    footer p {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    #header .bi-search, .bi-x::before, .bi-list::before, a {
+        margin: 0 5px;
+    }
+    #header a>button {
+        margin: 0;
+    }
+    #header {
+        padding-right: 0;
+    }
+    #header>div {
+        margin-right: 0;
+    }
+    #front div:nth-child(1) {
+        width: 225px;
+    }
+    .catlog2 ul li button {
+        width: 10%;
+    }
+}

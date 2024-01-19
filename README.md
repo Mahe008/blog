@@ -3,5 +3,5 @@
 
   DhisLog is a fully responsive blog website with login validation front-end, <br/> Responsive for all devices, build using HTML, CSS, and JavaScript.
 
-  <a href="https://mahe008.github.io/blog/"><strong>➥ Live Demo</strong></a>
+  <a href="https://mahe008.github.io/blog_FE/"><strong>➥ Live Demo</strong></a>
 </div>
